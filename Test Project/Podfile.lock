@@ -1,10 +1,14 @@
 PODS:
-  - TJMTwoDimensionalArray (1.0.0)
+  - TJMGameBoard (1.0.0):
+    - TJMTwoDimensionalArray (~> 1.0)
+  - TJMTwoDimensionalArray (1.0.2)
 
 DEPENDENCIES:
+  - TJMGameBoard (~> 1.0)
   - TJMTwoDimensionalArray (~> 1.0)
 
 SPEC CHECKSUMS:
-  TJMTwoDimensionalArray: f3d114018cacbb542f9624d6e5264f880111ae02
+  TJMGameBoard: 9d0187bcb5f772536e26d5c1b5990639f260a3db
+  TJMTwoDimensionalArray: 3bf4a3630c192e919daa2b89b246e72fd680a7e3
 
 COCOAPODS: 0.33.1
