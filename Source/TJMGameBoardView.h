@@ -24,7 +24,6 @@
 
 @property (assign, nonatomic) CGFloat minZoomLevel;
 @property (assign, nonatomic) CGFloat maxZoomLevel;
-@property (assign, nonatomic) BOOL tapFirstToZoomEnabled;
 
 @property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDataSource>dataSource;
 @property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDelegate> delegate;
