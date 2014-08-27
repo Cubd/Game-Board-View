@@ -10,7 +10,6 @@
 //
 //  TODO: Clean up how sizes are generated (perform rounding)
 //  TODO: The 2D array can be generalized to perform the actions on id rather than just UIView
-//  TODO: Add reset method
 //
 
 #import <UIKit/UIKit.h>
