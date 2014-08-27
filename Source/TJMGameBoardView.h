@@ -22,9 +22,6 @@
 @property (assign, nonatomic) NSUInteger numberOfRows;
 @property (assign, nonatomic) NSUInteger numberOfColumns;
 
-@property (assign, nonatomic) CGFloat minZoomLevel;
-@property (assign, nonatomic) CGFloat maxZoomLevel;
-
 @property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDataSource>dataSource;
 @property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDelegate> delegate;
 
