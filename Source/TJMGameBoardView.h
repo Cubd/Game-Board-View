@@ -14,16 +14,16 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol GFRGameBoardViewDelegate;
-@protocol GFRGameBoardViewDataSource;
+@protocol TJMGameBoardViewDelegate;
+@protocol TJMGameBoardViewDataSource;
 
 @interface TJMGameBoardView : UIView
 
 @property (assign, nonatomic) NSUInteger numberOfRows;
 @property (assign, nonatomic) NSUInteger numberOfColumns;
 
-@property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDataSource>dataSource;
-@property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDelegate> delegate;
+@property (weak, nonatomic) IBOutlet id<TJMGameBoardViewDataSource>dataSource;
+@property (weak, nonatomic) IBOutlet id<TJMGameBoardViewDelegate> delegate;
 
 - (instancetype)initWithFrame:(CGRect)frame numberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns;
 
@@ -41,7 +41,7 @@
 @end
 
 
-@protocol GFRGameBoardViewDataSource <NSObject>
+@protocol TJMGameBoardViewDataSource <NSObject>
 
 @required
 - (NSUInteger)numberOfRows;
@@ -54,7 +54,7 @@
 
 @end
 
-@protocol GFRGameBoardViewDelegate <NSObject>
+@protocol TJMGameBoardViewDelegate <NSObject>
 
 @optional
 - (void)gameBoardView:(TJMGameBoardView *)gameBoardView didTapRow:(NSUInteger)row column:(NSUInteger)column;
