@@ -20,18 +20,6 @@
 
 @interface TJMGameBoardView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame numberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns;
-
-- (void)placeGamePieceView:(UIView *)gamePieceView atRow:(NSUInteger)row column:(NSUInteger)column;
-- (void)placeSupplementaryView:(UIView *)supplementaryView atRow:(NSUInteger)row column:(NSUInteger)column;
-- (void)removeGamePieceViewAtRow:(NSUInteger)row column:(NSUInteger)column;
-- (void)removeSupplementaryViewAtRow:(NSUInteger)row column:(NSUInteger)column;
-- (void)removeAllGamePieceViews;
-- (void)removeAllSupplementaryViews;
-- (UIView *)gamePieceViewAtRow:(NSUInteger)row column:(NSUInteger)column;
-- (UIView *)supplementaryViewAtRow:(NSUInteger)row column:(NSUInteger)column;
-- (CGSize)recommendedGamePieceSize;
-
 @property (assign, nonatomic) NSUInteger numberOfRows;
 @property (assign, nonatomic) NSUInteger numberOfColumns;
 
@@ -41,6 +29,19 @@
 
 @property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDataSource>dataSource;
 @property (weak, nonatomic) IBOutlet id<GFRGameBoardViewDelegate> delegate;
+
+- (instancetype)initWithFrame:(CGRect)frame numberOfRows:(NSUInteger)numberOfRows numberOfColumns:(NSUInteger)numberOfColumns;
+
+- (void)placeGamePieceView:(UIView *)gamePieceView atRow:(NSUInteger)row column:(NSUInteger)column;
+- (void)placeSupplementaryView:(UIView *)supplementaryView atRow:(NSUInteger)row column:(NSUInteger)column;
+- (void)removeGamePieceViewAtRow:(NSUInteger)row column:(NSUInteger)column;
+- (void)removeSupplementaryViewAtRow:(NSUInteger)row column:(NSUInteger)column;
+- (void)reset;
+- (void)removeAllGamePieceViews;
+- (void)removeAllSupplementaryViews;
+- (UIView *)gamePieceViewAtRow:(NSUInteger)row column:(NSUInteger)column;
+- (UIView *)supplementaryViewAtRow:(NSUInteger)row column:(NSUInteger)column;
+- (CGSize)recommendedGamePieceSize;
 
 @end
 

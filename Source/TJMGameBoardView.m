@@ -209,6 +209,12 @@
     [self removeViewIn2DArray:self.supplementaryViews atRow:row column:column];
 }
 
+- (void)reset
+{
+    [self removeAllGamePieceViews];
+    [self removeAllSupplementaryViews];
+}
+
 - (void)removeAllGamePieceViews
 {
     for (NSUInteger row = 0; row < self.numberOfRows; row++)
