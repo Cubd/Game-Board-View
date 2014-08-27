@@ -2,14 +2,9 @@ PODS:
   - TJMTwoDimensionalArray (1.0.0)
 
 DEPENDENCIES:
-  - TJMTwoDimensionalArray (from `https://github.com/Cubd/Two-Dimensional-Array.git`, tag `1.0.0`)
-
-EXTERNAL SOURCES:
-  TJMTwoDimensionalArray:
-    :git: https://github.com/Cubd/Two-Dimensional-Array.git
-    :tag: 1.0.0
+  - TJMTwoDimensionalArray (~> 1.0)
 
 SPEC CHECKSUMS:
-  TJMTwoDimensionalArray: bf3df2419ea57d1aa189657b506d9bb345541fe7
+  TJMTwoDimensionalArray: f3d114018cacbb542f9624d6e5264f880111ae02
 
 COCOAPODS: 0.33.1
