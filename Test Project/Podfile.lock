@@ -5,7 +5,6 @@ PODS:
 
 DEPENDENCIES:
   - TJMGameBoard (~> 1.0)
-  - TJMTwoDimensionalArray (~> 1.0)
 
 SPEC CHECKSUMS:
   TJMGameBoard: 9d0187bcb5f772536e26d5c1b5990639f260a3db
