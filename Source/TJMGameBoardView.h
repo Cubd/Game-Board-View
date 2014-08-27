@@ -63,6 +63,5 @@
 
 @optional
 - (void)gameBoardView:(TJMGameBoardView *)gameBoardView didTapRow:(NSUInteger)row column:(NSUInteger)column;
-- (BOOL)gameBoardViewShouldZoom:(TJMGameBoardView *)gameBoardView;
 
 @end
