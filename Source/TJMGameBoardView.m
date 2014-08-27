@@ -264,8 +264,8 @@
 - (NSString *)description
 {
     NSMutableString *description = [[super description] mutableCopy];
-    [description appendFormat:@"; Number of rows: %d", self.numberOfRows];
-    [description appendFormat:@"; Number of columns: %d", self.numberOfColumns];
+    [description appendFormat:@"; Number of rows: %lu", (unsigned long)self.numberOfRows];
+    [description appendFormat:@"; Number of columns: %lu", (unsigned long)self.numberOfColumns];
     [description appendFormat:@"; Game piece views: %@", [self.gamePieceViews description]];
     [description appendFormat:@"; Supplementary views: %@", [self.supplementaryViews description]];
     
