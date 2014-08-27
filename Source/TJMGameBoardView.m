@@ -66,9 +66,7 @@
 }
 
 - (void)goGFRGameBoardViewCommonInit
-{
-    self.backgroundColor = [UIColor clearColor];
-    
+{    
     _gamePieceViews = [[TJMTwoDimensionalArray alloc] initWithNumberOfRows:_numberOfRows numberOfColumns:_numberOfColumns];
     _supplementaryViews = [[TJMTwoDimensionalArray alloc] initWithNumberOfRows:_numberOfRows numberOfColumns:_numberOfColumns];
 }
